@@ -1,0 +1,11 @@
+    $( '.js-moreless-btn' ).click( function ( e ) {
+		e.preventDefault();
+		$( this ).prev( '.show-text' ).slideToggle();
+		$( this ).toggleClass('information__button--open');
+
+		if ( $( this ).text() == 'Meer info tonen' ) {
+			$( this ).text( 'Show less info' );
+		} else {
+			$( this ).text( 'Meer info tonen' );
+		}
+	} );
